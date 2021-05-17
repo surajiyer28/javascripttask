@@ -14,9 +14,8 @@ function onFormSubmit(){
         cell4 = newRow.insertCell(3);
         cell4.innerHTML = formData.gender;
         cell5 = newRow.insertCell(4);
-        cell5.innerHTML = '<button type="button" onClick="onDelete(this)" class="btn btn-danger">Delete</button>';
-        cell6 = newRow.insertCell(5);
-        cell6.innerHTML = '<button type="button" onClick="onEdit(this)" class="btn btn-primary">Edit</button>';
+        cell5.innerHTML = '<button type="button" onClick="onDelete(this)" class="btn btn-danger">Delete</button> &nbsp <button type="button" onClick="onEdit(this)" class="btn btn-primary">Edit</button>';
+  
     }
     else {
         editRow.cells[0].innerHTML = formData.name;
