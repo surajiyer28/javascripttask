@@ -30,6 +30,7 @@ function onFormSubmit(){
     document.getElementById("age").value = "";
     document.getElementById("phone").value = "";
     document.getElementById("gender").value = "";
+    editRow = null;
     
 };
 
