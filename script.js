@@ -5,16 +5,11 @@ function onFormSubmit(){
     if(editRow == null){
         var table = document.getElementById("tbdata").getElementsByTagName('tbody')[0];
         var newRow = table.insertRow(table.length);
-        cell1 = newRow.insertCell(0);
-        cell1.innerHTML = formData.name;
-        cell2 = newRow.insertCell(1);
-        cell2.innerHTML = formData.age;
-        cell3 = newRow.insertCell(2);
-        cell3.innerHTML = formData.phone;
-        cell4 = newRow.insertCell(3);
-        cell4.innerHTML = formData.gender;
-        cell5 = newRow.insertCell(4);
-        cell5.innerHTML = '<button type="button" onClick="onDelete(this)" class="btn btn-danger">Delete</button> &nbsp   <button type="button" onClick="onEdit(this)" class="btn btn-primary">Edit</button>';
+        newRow.insertCell(0).innerHTML = formData.name;
+        newRow.insertCell(1).innerHTML = formData.age;
+        newRow.insertCell(2).innerHTML = formData.phone;
+        newRow.insertCell(3).innerHTML = formData.gender;
+        newRow.insertCell(4).innerHTML = '<button type="button" onClick="onDelete(this)" class="btn btn-danger">Delete</button> &nbsp   <button type="button" onClick="onEdit(this)" class="btn btn-primary">Edit</button>';
   
     }
     else {
@@ -38,12 +33,12 @@ function resetFields(){
 }
 
 function readData(){
-    var data = {};
-    data["name"] = document.getElementById("name").value;
-    data["age"] = document.getElementById("age").value;
-    data["phone"] = document.getElementById("phone").value;
-    data["gender"] = document.getElementById("gender").value;
-    return data;
+    var frmdata = {};
+    frmdata["name"] = document.getElementById("name").value;
+    frmdata["age"] = document.getElementById("age").value;
+    frmdata["phone"] = document.getElementById("phone").value;
+    frmdata["gender"] = document.getElementById("gender").value;
+    return frmdata;
 }
 
 function onEdit(cell){
