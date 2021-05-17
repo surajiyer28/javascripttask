@@ -25,13 +25,17 @@ function onFormSubmit(){
     }
    
 
+    resetFields();
+    
+}
+
+function resetFields(){
     document.getElementById("name").value = "";
     document.getElementById("age").value = "";
     document.getElementById("phone").value = "";
     document.getElementById("gender").value = "";
     editRow = null;
-    
-};
+}
 
 function readData(){
     var data = {};
