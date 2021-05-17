@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="script.js"></script>
+    <style>
+        .container{
+            display:flex;
+            justify-content:center;
+        }
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form onsubmit="event.preventDefault();onFormSubmit();">
+            <div class="row mt-3">
+                <div class="col md-3">
+                    <input type="text" class="form-control" placeholder="Enter Name" id="name">
+                </div>
+                <div class="col md-3">
+                    <input type="number" class="form-control" placeholder="Enter Age" id="age">
+                </div>
+                <div class="col md-3">
+                    <input type="phone" class="form-control" placeholder="Enter Phone Number" id="phone">
+                </div>
+                <div class="col md-3">
+                    <input type="text" class="form-control" placeholder="Enter Gender" id="gender">
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col md-12">
+                    <button type="submit" class="btn btn-success w-100">Add</button>
+                </div>
+            </div>
+        </form>
+        
+    </div>
+    <div class="container mt-4">
+        <table class="table" id="tbdata">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Age</th>
+                <th scope="col">Phone</th>
+                <th scope="col">Gender</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                
+        
+              </tr>
+            </tbody>
+          </table>
+        </div>
+</body>
+</html>
